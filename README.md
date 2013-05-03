@@ -20,5 +20,12 @@ in body:
 The example file index.html demos it.
 
 Call with:
-    //Draw Box and Whisker Plot
     wJSDrawGraph(graphWidth, min, q1, median, q3, max);
+
+Use it for whatever you like, there are surprisingly few tools for drawing these online.
+
+Projects Goals:
+- Resizable
+- Add Axis
+- Add Axis Labels
+- Vertical Box Plots (?)
