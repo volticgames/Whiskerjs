@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<title>Whiskerjs</title>
+		
+		<!-- Whisker Embed Code -->
+		<script type="text/javascript" src="js/whisker.js"></script>
+		<link rel="stylesheet" href="css/whisker.css" type="text/css">
+		<!-- End Whisker Embed Code -->
+		
+		
+		<style type="text/css">
+    		
+    		.container {
+                width: 200px;
+                clear: both;
+            }
+            .container input {
+                width: 100%;
+                clear: both;
+            }
+    		
+		</style>
+	</head>
+	<body>
+	   <div>
+	   <div class="container">
+	   <label class="graphInput" for="minVal">min:</label>
+	   <input type="text" id="minVal"><br>
+	   <label class="graphInput" for="q1Val">Q1:</label>
+	   <input type="text" id="q1Val"><br>
+	   <label class="graphInput" for="medianVal">median:</label>
+	   <input type="text" id="medianVal"><br>
+	   <label class="graphInput" for="q3Val">Q3:</label>
+	   <input type="text" id="q3Val"><br>
+	   <label class="graphInput" for="maxVal">max:</label>
+	   <input type="text" id="maxVal"><br><br>
+	   <button id="draw" name="draw" onclick="wJSDrawGraph(500,
+	       document.getElementById('minVal').value, 
+	       document.getElementById('q1Val').value, 
+	       document.getElementById('medianVal').value, 
+	       document.getElementById('q3Val').value, 
+	       document.getElementById('maxVal').value 
+	   )">Draw!</button>
+	   </div>
+	   <!-- Whisker JS Graph -->
+	   <div id='WJSGraph'></div>
+	   </div>
+	</body>
+</html>

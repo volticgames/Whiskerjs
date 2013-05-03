@@ -1,0 +1,20 @@
+#WJSGraph .WJSBar
+{
+	height: 32px;
+	float: left;
+	overflow: hidden;
+	/* Fill Colour of Graph */
+	background-color: #cccccc;
+}
+
+#WJSLine
+{
+	height: 1px;
+	float: none;
+	width: 0px;
+	/* Whisker Colour */
+	background-color: #000000;
+	position: relative;
+	bottom: -16px;
+	z-index: -1;
+}
