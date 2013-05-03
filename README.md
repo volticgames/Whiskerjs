@@ -20,7 +20,7 @@ in body:
 The example file index.html demos it.
 
 Call with:
-    wJSDrawGraph(graphWidth, min, q1, median, q3, max);
+    <code>wJSDrawGraph(graphWidth, min, q1, median, q3, max);</code>
 
 Use it for whatever you like, there are surprisingly few tools for drawing these online.
 
