@@ -20,4 +20,5 @@ in body:
 The example file index.html demos it.
 
 Call with:
+    //Draw Box and Whisker Plot
     wJSDrawGraph(graphWidth, min, q1, median, q3, max);
