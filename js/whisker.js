@@ -1,3 +1,9 @@
+/*
+ * Author: Ben Follington 2013
+ * Voltic.com.au
+ *
+ */
+
 function wJSDrawGraph(w, minIn, q1In, medIn, q3In, maxIn)
 {
     console.log("WJS Plot");
@@ -16,6 +22,12 @@ function wJSDrawGraph(w, minIn, q1In, medIn, q3In, maxIn)
     if (isNaN(min) || isNaN(q1) || isNaN(med) || isNaN(q3) || isNaN(max))
     {
         alert("Whisker: Please input actual numbers!");
+        return;
+    }
+    
+    if (q1 < min || med < q1 || q3 < med || max < q3)
+    {
+        alert("Numbers make no sense.");
         return;
     }
     
